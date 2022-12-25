@@ -1,0 +1,76 @@
+.whack-a-mole {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ justify-items: center;
+ align-items: center;
+ justify-self: center;
+ align-self: center;
+ align-content: center;
+ text-align: center;
+}
+
+
+
+.grid {
+ width: 37.875rem;
+ height: 37.875rem;
+ display: flex;
+ flex-wrap: wrap;
+ box-shadow: 0 9px 9px 9px rgba(0, 0, 0, .1);
+ background-color: purple;
+}
+
+.square {
+ width: 12.5rem;
+ height: 12.5rem;
+ border: 1px solid black;
+}
+
+.mole {
+ background-image: url('mole.jpg');
+ background-size: cover;
+}
+
+#start-pause-button {
+ display: inline-block;
+ 
+ width: 100px;
+ border: none;
+ background-color: #04AA6D;
+ color: white;
+ padding: 0.875rem 1.75rem;
+ font-size: 1rem;
+ cursor: pointer;
+ margin-top: 1.25rem;
+ margin-bottom: 1.25rem;
+ text-align: center;
+ box-shadow: 0 9px 9px 9px rgba(0, 0, 0, .1);
+}
+
+#start-pause-button:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+#start-pause-button:active {
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
+
+h2 {
+ font-size: 3.125rem;
+ color: #fff;
+ text-align: center;
+ animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+ from {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+ }
+
+ to {
+  text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+ }
+}
